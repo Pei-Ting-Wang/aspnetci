@@ -5,6 +5,10 @@ on:
         branches:
             - developer
             - master
+    pull_request:
+        branches:
+            - developer
+            - master
     workflow_dispatch:
 
 jobs:
