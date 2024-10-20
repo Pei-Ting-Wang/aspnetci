@@ -24,14 +24,13 @@ jobs:
               with:
                   dotnet-version: '8.0.0'
 
-            - name: Restore dependencies
-              run: dotnet restore
-
             - name: Build
-              run: dotnet build -c Release
+              run: cd webmvc
+                  dotnet build -c Release
 
             - name: Publish
-              run: dotnet publish -c Release -o ./publish
+              run: cd webmvc
+                  dotnet publish -c Release -o ./publish
 
             - name: Upload artifact
               uses: actions/upload-artifact@v2
