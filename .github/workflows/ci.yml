@@ -38,4 +38,4 @@ jobs:
               uses: actions/upload-artifact@v3
               with:
                   name: published-files
-                  path: publish
+                  path: ./webmvc/publish
